@@ -1,23 +1,22 @@
-<p> English | <a href="README_CN.md"> 中文 <a/></p>
+<p> <a href="README.md"> English <a/> |  中文 </p>
 
-# Monitor Solana blockchain pump.fun real-time transaction activity with Webhook-based real-time transaction information push.
+# 监控 Solana 区块链 pump.fun 实时交易动向，Webhook 实时推送交易信息。
 
-Utilize high-performance Solana nodes to listen in real-time to transactions related to the pump.fun platform on the
-Solana blockchain, parse the transaction data, extract buy/sell information, and then push the information in JSON
-format to the user's Webhook URL.
+使用高性能的 Solana 节点，实时监听 Solana 区块链上与 pump.fun 平台相关的交易，并解析交易数据，提取买入/卖出信息，然后以 JSON
+格式推送到用户的 Webhook URL。
 
-* **Real-time Push:** Real-time push of buy/sell transaction information on the pump.fun platform.
-* **New Token Monitoring:** Ability to automatically detect and monitor newly created tokens on pump.fun.
-* **Data Format:** Push data in JSON format for easy parsing and use by users.
-* **Security:** Provide Webhook signature verification to ensure data security and reliability.
+* **实时推送:** 实时推送 pump.fun 平台上的买入/卖出交易信息。
+* **新代币监控:** 能够自动检测和监控 pump.fun 上新创建的代币。
+* **数据格式:** 以 JSON 格式推送数据，方便用户解析和使用。
+* **安全性:** 提供 Webhook 签名验证，确保数据安全可靠。
 
-## Data Format
+## 数据格式
 
-* We will send data in JSON format (UTF-8 encoded) to the webhook endpoint via an HTTP POST request.
-* sol_amount (in lamports)
-* price (in SOL)
+* 通过 HTTP POST 请求，将 JSON 格式的数据（UTF-8 编码）发送到 webhook endpoint。
+* sol_amount 单位为 lamports
+* price 单位为 SOL
 
-#### create
+#### 新创建代币
 
 ```json
 {
@@ -44,7 +43,7 @@ format to the user's Webhook URL.
 }
 ```
 
-#### buy
+#### 买入代币
 
 ```json
 {
@@ -73,7 +72,7 @@ format to the user's Webhook URL.
 }
 ```
 
-#### sell
+#### 卖出代币
 
 ```json
 {
@@ -102,9 +101,10 @@ format to the user's Webhook URL.
 }
 ```
 
-## Testing Environments
+## 测试环境
 
-Here are some testing environments that are quick to set up for posting webhook events:
+这里列出了一些可以快速搭建的测试环境，用来接收 Webhook 事件：
 
 * [Typedwebhook.tools - A webhook testing tool for checking payloads](https://typedwebhook.tools)
 * [Webhook.site - Test, process and transform emails and HTTP requests](https://webhook.site)
+
