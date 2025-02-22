@@ -40,11 +40,19 @@ Global Flags:
 
 ## 数据格式
 
-* 通过 HTTP POST 请求，将 JSON 格式的数据（UTF-8 编码）发送到 webhook endpoint。
+HTTP header
+
+```text
+Header            Value
+Content-Type      application/json; charset=utf-8
+X-Trace-Id        01JMFG86VZZSQFWJ210T33V8N5
+X-Attempt-Count   2
+```
+
 * sol_amount 单位为 lamports
 * price 单位为 SOL
 
-#### 新创建代币
+#### 创建
 
 ```json
 {
@@ -71,7 +79,7 @@ Global Flags:
 }
 ```
 
-#### 买入代币
+#### 买入
 
 ```json
 {
@@ -100,7 +108,7 @@ Global Flags:
 }
 ```
 
-#### 卖出代币
+#### 卖出
 
 ```json
 {

@@ -41,7 +41,15 @@ Global Flags:
 
 ## Data Format
 
-* We will send data in JSON format (UTF-8 encoded) to the webhook endpoint via an HTTP POST request.
+HTTP header
+
+```text
+Header            Value
+Content-Type      application/json; charset=utf-8
+X-Trace-Id        01JMFG86VZZSQFWJ210T33V8N5
+X-Attempt-Count   2
+```
+
 * sol_amount (in lamports)
 * price (in SOL)
 
