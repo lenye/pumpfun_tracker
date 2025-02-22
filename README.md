@@ -108,3 +108,8 @@ Here are some testing environments that are quick to set up for posting webhook 
 
 * [Typedwebhook.tools - A webhook testing tool for checking payloads](https://typedwebhook.tools)
 * [Webhook.site - Test, process and transform emails and HTTP requests](https://webhook.site)
+
+# Disclaimer
+
+This project is for learning and research purposes only. Cryptocurrencies and trading involve risk, and you assume all
+risks associated with using this software. We are not responsible for any losses incurred while using this software.

@@ -108,3 +108,6 @@
 * [Typedwebhook.tools - A webhook testing tool for checking payloads](https://typedwebhook.tools)
 * [Webhook.site - Test, process and transform emails and HTTP requests](https://webhook.site)
 
+# 免责声明
+
+本项目仅供学习和研究之用，加密币及交易存在风险，使用此软件的风险由您自行承担，我们对使用该软件时产生的任何损失概不负责。
