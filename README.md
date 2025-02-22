@@ -11,6 +11,34 @@ format to the user's Webhook URL.
 * **Data Format:** Push data in JSON format for easy parsing and use by users.
 * **Security:** Provide Webhook signature verification to ensure data security and reliability.
 
+## Usage
+
+```shell
+pumpfun_tracker serve -h
+Track pump.fun's live trading movements and receive real-time transaction updates via Webhooks
+
+Usage:
+  pumpfun_tracker serve [flags]
+
+Flags:
+      --websocket_endpoint string           solana RPC Websocket endpoint (required)
+      --rpc_endpoint string                 solana RPC endpoint (required)
+      --rpc_ratelimit int                   maximum requests per second (RPS) rate limit for solana RPC endpoint (default 5)
+      --webhook_endpoint string             webhook URL. This could be a lambda, a custom API endpoint, etc (required)
+      --webhook_timeout duration            webhook timeout, Maximum 30 seconds (default 5s)
+      --webhook_auth_header_secret string   HTTP authentication header secret to pass into the POST requests to webhook
+      --webhook_auth_header_key string      HTTP authentication header key to pass into the POST requests to webhook (default "Authorization")
+      --webhook_retry_attempts uint         webhook retry attempts, Maximum 5 times (default 0, no retries)
+      --webhook_retry_interval duration     webhook retry interval, Maximum 30 seconds (default 500ms)
+      --trade_log_enable                    enable trade logging
+      --worker_error_log_enable             worker function error logging
+  -h, --help                                help for serve
+
+Global Flags:
+  -l, --level string   log level: info, warn, error (default "info")
+  -f, --logfile        writing to a log file
+```
+
 ## Data Format
 
 * We will send data in JSON format (UTF-8 encoded) to the webhook endpoint via an HTTP POST request.
