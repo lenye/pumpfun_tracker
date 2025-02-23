@@ -14,30 +14,31 @@ format to the user's Webhook URL.
 ## Usage
 
 ```shell
-pumpfun_tracker serve -h
+$ pumpfun_tracker serve -h
+
 Track pump.fun's live trading movements and receive real-time transaction updates via Webhooks
 
 Usage:
   pumpfun_tracker serve [flags]
 
 Flags:
-      --websocket_endpoint string           solana RPC Websocket endpoint (required)
-      --rpc_endpoint string                 solana RPC endpoint (required)
+  -w, --websocket_endpoint string           solana RPC Websocket endpoint (required)
+  -r, --rpc_endpoint string                 solana RPC endpoint (required)
       --rpc_ratelimit int                   maximum requests per second (RPS) rate limit for solana RPC endpoint (default 5)
-      --webhook_endpoint string             webhook URL. This could be a lambda, a custom API endpoint, etc (required)
-      --webhook_timeout duration            webhook timeout, Maximum 30 seconds (default 5s)
+  -k, --webhook_endpoint string             Webhook URL. This could be a lambda, a custom API endpoint, etc (required)
+      --webhook_timeout duration            Webhook request timeout, Maximum 30 seconds (default 5s)
       --webhook_auth_header_secret string   HTTP authentication header secret to pass into the POST requests to webhook
       --webhook_auth_header_key string      HTTP authentication header key to pass into the POST requests to webhook (default "Authorization")
-      --webhook_retry_attempts uint         webhook retry attempts, Maximum 5 times (default 0, no retries)
-      --webhook_retry_interval duration     webhook retry interval, Maximum 30 seconds (default 500ms)
-      --trade_log_enable                    enable trade logging
-      --worker_error_log_enable             worker function error logging
+      --webhook_retry_attempts uint         Webhook retry attempts, Maximum 5 times (default 0, no retries)
+      --webhook_retry_interval duration     Webhook retry interval, Maximum 30 seconds (default 500ms)
+  -t, --trade_log                           enable trade logging
+      --worker_error_log                    enable worker function error logging
+  -f, --logfile                             enable writing to a log file
+  -l, --level string                        log level: info, warn, error (default "info")
   -h, --help                                help for serve
-
-Global Flags:
-  -l, --level string   log level: info, warn, error (default "info")
-  -f, --logfile        writing to a log file
 ```
+
+Rate limit: Solana RPC endpoint, maximum requests per second: 5.
 
 ## Data Format
 
@@ -53,7 +54,7 @@ X-Attempt-Count   2
 * sol_amount (in lamports)
 * price (in SOL)
 
-#### create
+#### Create
 
 ```json
 {
@@ -80,7 +81,7 @@ X-Attempt-Count   2
 }
 ```
 
-#### buy
+#### Buy
 
 ```json
 {
@@ -109,7 +110,7 @@ X-Attempt-Count   2
 }
 ```
 
-#### sell
+#### Sell
 
 ```json
 {
@@ -135,6 +136,32 @@ X-Attempt-Count   2
     "tx_hash": "5PD2KbbsRy2WUNfjimKdSq9xvqBGtaDBWXoSWn8TPkmhj5TGBPuGkWUJnjovFECGhtXwemuChRTX1hie7zyDDQkr",
     "block_time": 1726935585,
     "slot": 291165075
+}
+```
+
+#### Raydium Migration
+
+```json
+{
+    "market": "pump.fun",
+    "instructions": [
+        {
+            "action": "raydium_migration",
+            "accounts": {
+                "amm": "99xV1kc1nv8QYsoswMLKnGyh2y5BLAdqgdsRsQT35wR4",
+                "coin_mint": "So11111111111111111111111111111111111111112",
+                "pc_mint": "HzyjrtxxsrR7H3iUPsdMc8EqiyiCmACraVYQY12npump"
+            },
+            "data": {
+                "open_time": 0,
+                "init_pc_amount": 206900000000000,
+                "init_coin_amount": 79005360080
+            }
+        }
+    ],
+    "tx_hash": "2uEGYnCtYP8LVqZaB6vS3fTQDuzvo6o34CQHTGV4FY7ESiXb2ioRQZYTNV13BPmYch6EqTaJ8yTXhRprBzhUR5Hg",
+    "block_time": 1739130385,
+    "slot": 319573989
 }
 ```
 
