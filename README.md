@@ -58,9 +58,9 @@ X-Attempt-Count   2
 
 ```json
 {
-    "market": "pump.fun",
     "instructions": [
         {
+            "market": "pump.fun",
             "action": "create",
             "accounts": {
                 "mint": "Kz2MfJf6ZNChZLK7Wofzma5BsnnebnPPZwN775sirCE",
@@ -85,9 +85,9 @@ X-Attempt-Count   2
 
 ```json
 {
-    "market": "pump.fun",
     "instructions": [
         {
+            "market": "pump.fun",
             "action": "buy",
             "accounts": {
                 "mint": "FV1U42g3mvtKhWZgKf3s76sLTcXm1bGHTEwiAVHtpump",
@@ -114,9 +114,9 @@ X-Attempt-Count   2
 
 ```json
 {
-    "market": "pump.fun",
     "instructions": [
         {
+            "market": "pump.fun",
             "action": "sell",
             "accounts": {
                 "mint": "4HSvu2598JRFhyfqVi6kXcsb3Y3AXepzE1iBJhGupump",
@@ -143,9 +143,9 @@ X-Attempt-Count   2
 
 ```json
 {
-    "market": "pump.fun",
     "instructions": [
         {
+            "market": "pump.fun",
             "action": "pumpfun_raydium_migration",
             "accounts": {
                 "amm": "99xV1kc1nv8QYsoswMLKnGyh2y5BLAdqgdsRsQT35wR4",
