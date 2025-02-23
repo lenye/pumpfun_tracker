@@ -145,7 +145,7 @@ X-Attempt-Count   2
     "market": "pump.fun",
     "instructions": [
         {
-            "action": "raydium_migration",
+            "action": "pumpfun_raydium_migration",
             "accounts": {
                 "amm": "99xV1kc1nv8QYsoswMLKnGyh2y5BLAdqgdsRsQT35wR4",
                 "coin_mint": "So11111111111111111111111111111111111111112",
