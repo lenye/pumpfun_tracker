@@ -8,6 +8,7 @@ format to the user's Webhook URL.
 
 * **Real-time Push:** Real-time push of buy/sell transaction information on the pump.fun platform.
 * **New Token Monitoring:** Ability to automatically detect and monitor newly created tokens on pump.fun.
+* **Monitoring Raydium migrations:** monitor real-time migrations of tokens from pump.fun to Raydium DEX.
 * **Data Format:** Push data in JSON format for easy parsing and use by users.
 * **Security:** Provide Webhook signature verification to ensure data security and reliability.
 
