@@ -61,8 +61,8 @@ X-Attempt-Count   2
 {
     "instructions": [
         {
-            "market": "pump.fun",
-            "action": "create",
+            "market": "pumpfun",
+            "method": "create",
             "accounts": {
                 "mint": "Kz2MfJf6ZNChZLK7Wofzma5BsnnebnPPZwN775sirCE",
                 "bonding_curve": "31PV2wqSYVBp9NtjRQRnpUjJAuaBqbwY9oDqBtkj4ciV",
@@ -88,8 +88,8 @@ X-Attempt-Count   2
 {
     "instructions": [
         {
-            "market": "pump.fun",
-            "action": "buy",
+            "market": "pumpfun",
+            "method": "buy",
             "accounts": {
                 "mint": "FV1U42g3mvtKhWZgKf3s76sLTcXm1bGHTEwiAVHtpump",
                 "bonding_curve": "Bzp9zS9KoQDRYTie7QmYZBGhQDN4ChDeGpNce9mn296g",
@@ -117,8 +117,8 @@ X-Attempt-Count   2
 {
     "instructions": [
         {
-            "market": "pump.fun",
-            "action": "sell",
+            "market": "pumpfun",
+            "method": "sell",
             "accounts": {
                 "mint": "4HSvu2598JRFhyfqVi6kXcsb3Y3AXepzE1iBJhGupump",
                 "bonding_curve": "HkNRxBLdDcSRbC6aMb7LmGb29s5ZRg4RbC9QU4E1vjk",
@@ -146,8 +146,8 @@ X-Attempt-Count   2
 {
     "instructions": [
         {
-            "market": "pump.fun",
-            "action": "pumpfun_raydium_migration",
+            "market": "raydium_liquidity_pool_v4",
+            "method": "pumpfun_raydium_migration",
             "accounts": {
                 "amm": "99xV1kc1nv8QYsoswMLKnGyh2y5BLAdqgdsRsQT35wR4",
                 "coin_mint": "So11111111111111111111111111111111111111112",
