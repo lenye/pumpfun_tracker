@@ -178,6 +178,11 @@ Here are some testing environments that are quick to set up for posting webhook 
 * [Typedwebhook.tools - A webhook testing tool for checking payloads](https://typedwebhook.tools)
 * [Webhook.site - Test, process and transform emails and HTTP requests](https://webhook.site)
 
+## Support
+
+If you find this project helpful, please consider giving it a ⭐️ on GitHub! If you have any further questions or need
+assistance, check the [issues page](https://github.com/lenye/pumpfun_tracker/issues), feel free to reach out to me anytime!
+
 # Disclaimer
 
 This project is for learning and research purposes only. Cryptocurrencies and trading involve risk, and you assume all

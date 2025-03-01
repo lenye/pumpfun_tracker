@@ -177,6 +177,10 @@ X-Attempt-Count   2
 * [Typedwebhook.tools - A webhook testing tool for checking payloads](https://typedwebhook.tools)
 * [Webhook.site - Test, process and transform emails and HTTP requests](https://webhook.site)
 
+## 支持
+
+如果您觉得这个项目有帮助，请考虑在 GitHub 上给它一个 ⭐️！如果您有任何进一步的问题或需要帮助，请查看[问题页面](https://github.com/lenye/pumpfun_tracker/issues)，并随时与我联系！
+
 # 免责声明
 
 本项目仅供学习和研究之用，加密币及交易存在风险，使用此软件的风险由您自行承担，我们对使用该软件时产生的任何损失概不负责。
