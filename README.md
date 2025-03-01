@@ -41,6 +41,10 @@ Flags:
 
 Free trial rate limit: Solana RPC endpoint, maximum requests per second: 5.
 
+## Release
+
+Static binaries are available in [release section](https://github.com/lenye/pumpfun_tracker/releases)
+
 ## Data Format
 
 HTTP header
@@ -48,6 +52,7 @@ HTTP header
 ```text
 Header            Value
 Content-Type      application/json; charset=utf-8
+X-Block-Time      2025-02-26T16:53:17Z
 X-Trace-Id        01JMFG86VZZSQFWJ210T33V8N5
 X-Attempt-Count   2
 ```

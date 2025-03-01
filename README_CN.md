@@ -40,6 +40,10 @@ Flags:
 
 试用版本速率限制：Solana RPC endpoint，每秒最大请求数：5
 
+## 下载
+
+程序文件在[发布区域](https://github.com/lenye/pumpfun_tracker/releases)。
+
 ## 数据格式
 
 HTTP header
@@ -47,6 +51,7 @@ HTTP header
 ```text
 Header            Value
 Content-Type      application/json; charset=utf-8
+X-Block-Time      2025-02-26T16:53:17Z
 X-Trace-Id        01JMFG86VZZSQFWJ210T33V8N5
 X-Attempt-Count   2
 ```
