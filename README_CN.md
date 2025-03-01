@@ -38,7 +38,7 @@ Flags:
   -h, --help                                help for serve
 ```
 
-速率限制：Solana RPC endpoint，每秒最大请求数：5
+试用版本速率限制：Solana RPC endpoint，每秒最大请求数：5
 
 ## 数据格式
 

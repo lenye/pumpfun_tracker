@@ -39,7 +39,7 @@ Flags:
   -h, --help                                help for serve
 ```
 
-Rate limit: Solana RPC endpoint, maximum requests per second: 5.
+Free trial rate limit: Solana RPC endpoint, maximum requests per second: 5.
 
 ## Data Format
 
