@@ -38,6 +38,12 @@ Flags:
   -h, --help                                help for serve
 ```
 
+使用 helius RPC 节点样例：
+
+```shell
+$ pumpfun_tracker serve --websocket_endpoint wss://mainnet.helius-rpc.com/?api-key=xxx --rpc_endpoint https://mainnet.helius-rpc.com/?api-key=xxx --rpc_ratelimit 3 --webhook_endpoint https://typedwebhook.tools/webhook/fdc7a346-01b2-48b5-8eae-1b577d2f47f2
+```
+
 试用版本速率限制：Solana RPC endpoint，每秒最大请求数：5
 
 ## 下载
@@ -179,7 +185,8 @@ X-Attempt-Count   2
 
 ## 支持
 
-如果您觉得这个项目有帮助，请考虑在 GitHub 上给它一个 ⭐️！如果您有任何进一步的问题或需要帮助，请查看[问题页面](https://github.com/lenye/pumpfun_tracker/issues)，并随时与我联系！
+如果您觉得这个项目有帮助，请考虑在 GitHub 上给它一个
+⭐️！如果您有任何进一步的问题或需要帮助，请查看[问题页面](https://github.com/lenye/pumpfun_tracker/issues)，并随时与我联系！
 
 # 免责声明
 

@@ -39,6 +39,12 @@ Flags:
   -h, --help                                help for serve
 ```
 
+Using Helius RPC node example:
+
+```shell
+$ pumpfun_tracker serve --websocket_endpoint wss://mainnet.helius-rpc.com/?api-key=xxx --rpc_endpoint https://mainnet.helius-rpc.com/?api-key=xxx --rpc_ratelimit 3 --webhook_endpoint https://typedwebhook.tools/webhook/fdc7a346-01b2-48b5-8eae-1b577d2f47f2
+```
+
 Free trial rate limit: Solana RPC endpoint, maximum requests per second: 5.
 
 ## Release
@@ -181,7 +187,8 @@ Here are some testing environments that are quick to set up for posting webhook 
 ## Support
 
 If you find this project helpful, please consider giving it a ⭐️ on GitHub! If you have any further questions or need
-assistance, check the [issues page](https://github.com/lenye/pumpfun_tracker/issues), feel free to reach out to me anytime!
+assistance, check the [issues page](https://github.com/lenye/pumpfun_tracker/issues), feel free to reach out to me
+anytime!
 
 # Disclaimer
 
